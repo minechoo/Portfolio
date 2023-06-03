@@ -1,0 +1,14 @@
+$tablet: 999px;
+$mobile: 639px;
+$widthContent: 1400px;
+$red: #cd5772;
+$orange: #ce6a52;
+$grey: #63666e;
+
+@import 'common/reset';
+@import 'common/common';
+@import 'common/header';
+@import 'common/footer';
+@import 'common/layout';
+
+@import 'main/main';

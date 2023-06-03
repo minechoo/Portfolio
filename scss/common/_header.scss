@@ -1,0 +1,41 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0 auto;
+	padding: 2% 4%;
+	z-index: 1;
+	box-sizing: border-box;
+
+	h1 {
+		a {
+			display: block;
+			width: 95px;
+			height: 19px;
+			background: url(../img/logo.png) no-repeat right center;
+			background-size: 28px 19px;
+			color: #fff;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 19px;
+		}
+	}
+
+	#gnb {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		gap: 20px;
+
+		li {
+			a {
+				color: #fff;
+				font-size: 14px;
+			}
+		}
+	}
+}

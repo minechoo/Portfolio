@@ -5,6 +5,8 @@ $red: #cd5772;
 $orange: #ce6a52;
 $grey: #63666e;
 
+$width90: 90%;
+
 @import 'common/reset';
 @import 'common/common';
 @import 'common/header';
@@ -12,3 +14,7 @@ $grey: #63666e;
 @import 'common/layout';
 
 @import 'main/main';
+
+@media screen and (max-width: 1399px) {
+	$widthContent: 90%;
+}

@@ -38,4 +38,23 @@ header {
 			}
 		}
 	}
+	#menu {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	header {
+		padding: 4%;
+		#gnb {
+			display: none;
+		}
+		#menu {
+			display: block;
+
+			i {
+				color: #fff;
+			}
+		}
+	}
 }

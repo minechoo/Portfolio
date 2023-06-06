@@ -13,7 +13,7 @@ footer {
 		justify-content: space-between;
 		align-items: flex-start;
 		.left_box {
-			width: 327px;
+			width: 24%;
 			h1 {
 				a {
 					display: block;
@@ -72,6 +72,51 @@ footer {
 					text-align: left;
 				}
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 1399px) {
+	footer {
+		.content {
+			width: $width90;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	footer {
+		background-size: 312px 204px;
+		.content {
+			.left_box {
+				width: 35%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 970px) {
+	footer {
+		background: #1c1b21;
+	}
+}
+
+@media screen and (max-width: 572px) {
+	footer .content {
+		flex-wrap: wrap;
+		padding: 41px 0;
+		.left_box {
+			width: 100%;
+			margin-bottom: 30px;
+			p {
+				margin: 32px 0 10px;
+			}
+			.sns {
+				float: right;
+			}
+		}
+		.right_box {
+			gap: 15px;
 		}
 	}
 }

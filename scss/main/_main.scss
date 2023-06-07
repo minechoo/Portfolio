@@ -78,7 +78,7 @@
 #things {
 	position: relative;
 	width: 100%;
-	height: 1750px;
+	height: auto;
 	background: #232427;
 	overflow: hidden;
 
@@ -88,11 +88,9 @@
 		margin: 0 auto;
 
 		.content_txt {
-			position: absolute;
-			top: 0;
-			left: 0;
+			position: relative;
 			width: 900px;
-			margin: 100px auto;
+			margin: 100px 0;
 
 			h1 {
 				font-size: 36px;
@@ -119,17 +117,16 @@
 	}
 
 	.big_txt {
-		float: right;
-		margin: 70px 5vw 0 0;
+		position: absolute;
+		top: 70px;
+		right: 5vw;
 		font-size: 50vw;
 		color: #1a1a1f;
 		font-weight: 900;
 	}
 
 	#youtube {
-		position: absolute;
-		top: 480px;
-		left: 0;
+		position: relative;
 		width: 100%;
 		height: 300px;
 		display: flex;
@@ -160,11 +157,9 @@
 }
 
 #gallery {
-	position: absolute;
-	top: 900px;
-	left: 50%;
-	transform: translateX(-50%);
+	position: relative;
 	width: $widthContent;
+	margin: 100px auto;
 	text-align: center;
 
 	h1 {
@@ -376,11 +371,11 @@
 	$widthContent: 90%;
 	#things {
 		.content {
-			width: $width90;
+			width: $widthContent;
 		}
 	}
 	#gallery {
-		width: $width90;
+		width: $widthContent;
 		.img_box {
 			gap: 40px;
 			figure {
@@ -393,7 +388,7 @@
 	}
 	#news {
 		.content {
-			width: $width90;
+			width: $widthContent;
 			.txt_box {
 				.txt_inner {
 					height: 144px;
@@ -419,7 +414,6 @@
 
 @media screen and (max-width: 1024px) {
 	#things {
-		height: 1600px;
 		.content .content_txt {
 			width: 70%;
 			margin-top: 60px;
@@ -458,7 +452,6 @@
 		}
 	}
 	#things {
-		height: 2000px;
 		.content {
 			.content_txt {
 				width: 100%;
@@ -503,16 +496,17 @@
 }
 @media screen and (max-width: 572px) {
 	#things {
-		height: 3050px;
 		.big_txt {
 			font-size: 90vw;
 			margin-right: -30px;
 		}
-		#youtube {
-			top: 600px;
+		.content {
+			.content_txt {
+				margin: 50px 0;
+			}
 		}
 		#gallery {
-			top: 1000px;
+			margin: 70px auto 50px;
 			.img_box {
 				figure {
 					height: 450px;
@@ -562,12 +556,8 @@
 		}
 	}
 	#things {
-		height: 3150px;
-		#youtube {
-			top: 730px;
-		}
+		// height: 3150px;
 		#gallery {
-			top: 1100px;
 			.img_box {
 				figure {
 					height: 450px;

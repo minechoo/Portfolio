@@ -12,8 +12,11 @@ $width90: 90%;
 @import 'common/header';
 @import 'common/footer';
 @import 'common/layout';
+@import 'common/subHeader';
 
 @import 'main/main';
+
+@import 'sub/department';
 
 @media screen and (max-width: 1399px) {
 	$widthContent: 90%;

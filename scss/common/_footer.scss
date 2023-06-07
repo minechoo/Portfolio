@@ -76,10 +76,11 @@ footer {
 	}
 }
 
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 1440px) {
+	$widthContent: 90%;
 	footer {
 		.content {
-			width: $width90;
+			width: $widthContent;
 		}
 	}
 }

@@ -98,8 +98,25 @@
 	transform: translateX(-50%);
 }
 
-.flex_between {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.big_txt_sub {
+	position: absolute;
+	top: 5vh;
+	left: 5vw;
+	font-size: 50vw;
+	color: #ddd;
+	font-weight: 800;
+	opacity: 0.7;
+}
+
+@media screen and (max-width: $tablet) {
+	.big_txt_sub {
+		font-size: 70vw;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.big_txt_sub {
+		font-size: 100vw;
+		margin-left: -50px;
+	}
 }

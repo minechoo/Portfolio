@@ -1,4 +1,4 @@
-header {
+header.mainH {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -10,6 +10,7 @@ header {
 	padding: 2% 4%;
 	z-index: 1;
 	box-sizing: border-box;
+	border: none;
 
 	h1 {
 		a {
@@ -35,6 +36,7 @@ header {
 			a {
 				color: #fff;
 				font-size: 14px;
+				font-weight: 400;
 			}
 		}
 	}
@@ -44,7 +46,7 @@ header {
 }
 
 @media screen and (max-width: 1024px) {
-	header {
+	header.mainH {
 		padding: 4%;
 		#gnb {
 			display: none;

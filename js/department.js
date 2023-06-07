@@ -3,7 +3,7 @@ const wrap = document.querySelector('.department .wrap');
 dummyData();
 
 async function dummyData() {
-	const data = await fetch('/DB/department.json');
+	const data = await fetch('DB/department.json');
 	const json = await data.json();
 	console.log(json.members);
 

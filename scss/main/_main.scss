@@ -84,12 +84,15 @@
 
 	.content {
 		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		width: $widthContent;
 		margin: 0 auto;
 
 		.content_txt {
 			position: relative;
-			width: 900px;
+			width: 65%;
 			margin: 100px 0;
 
 			h1 {

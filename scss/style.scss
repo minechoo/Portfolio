@@ -1,9 +1,11 @@
 $tablet: 999px;
 $mobile: 639px;
 $widthContent: 1400px;
+$widthSub: 924px;
 $red: #cd5772;
 $orange: #ce6a52;
 $grey: #63666e;
+$deepblue: #1c1b20;
 
 $width90: 90%;
 
@@ -12,12 +14,8 @@ $width90: 90%;
 @import 'common/header';
 @import 'common/footer';
 @import 'common/layout';
-@import 'common/subHeader';
+// @import 'common/subHeader';
 
 @import 'main/main';
 
 @import 'sub/department';
-
-@media screen and (max-width: 1399px) {
-	$widthContent: 90%;
-}

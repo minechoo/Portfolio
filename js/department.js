@@ -18,11 +18,16 @@ function creatListD(arr) {
 		tags += `
       <article>
         <div class="pic">
-        <div class="deco_line"></div>
           <img src="img/${el.pic}" />
-        </div>
-        <h2>${el.name}</h2>
-        <p>${el.position}</p>
+					<div class="ex"> 
+						<h2>${el.name}</h2>
+						<p>${el.position}</p>
+						<span class="sns">
+							<i class="fa-brands fa-twitter"></i>
+							<i class="fa-brands fa-facebook-f"></i>
+						</span>
+					</div>
+        </div>				       
       </article>
       `;
 	});

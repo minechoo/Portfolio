@@ -12,6 +12,14 @@
 		justify-content: space-between;
 		align-items: flex-start;
 		flex-wrap: wrap;
+		// opacity: 0;
+		// transform: translateY(100px);
+		// transition: 1s;
+
+		// &.on {
+		// 	opacity: 1;
+		// 	transform: translateY(0px);
+		// }
 
 		article {
 			width: calc(100% / 4);

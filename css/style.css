@@ -252,7 +252,7 @@ button {
 }
 
 .w_sub {
-  width: 924px !important;
+  width: 923px !important;
 }
 
 .sub_txt {
@@ -1071,7 +1071,7 @@ footer .content .right_box .right_box_inner li {
 }
 .department .wrap {
   position: relative;
-  width: 924px;
+  width: 923px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;

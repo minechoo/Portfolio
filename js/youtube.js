@@ -8,6 +8,7 @@ document.body.addEventListener('click', (e) => {
 });
 
 async function fetchDataY() {
+	// wrapY.classList.remove('on');
 	const key = 'AIzaSyANMdnk7q2cBX8tqGJZXpVFH9bGJMOwmEc';
 	const list = 'PLMafzyXZ12TPBYgeplFEdJeSMcJvb3v5u';
 	const num = 8;
@@ -45,6 +46,7 @@ function createListY(arr) {
     `;
 	});
 	wrapY.innerHTML = tags;
+	// wrapY.classList.add('on');
 }
 
 function createPopY(id) {

@@ -7,8 +7,6 @@ async function dummyData() {
 	const json = await data.json();
 	console.log(json.members);
 
-	const mamberData = json.members;
-
 	creatListD(json.members);
 }
 

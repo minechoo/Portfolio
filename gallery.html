@@ -5,14 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>department</title>
-  <meta name="description" content="department" />
+  <title>youtube</title>
+  <meta name="description" content="youtube" />
   <meta name="keywords" content="motion" />
   <meta name="author" content="추민해" />
   <link rel="shortcut icon" href="img/favicon.ico">
   <script src="https://kit.fontawesome.com/31531ce94a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
-  <script defer src="js/department.js"></script>
+
+  <script defer src="js/gallery.js"></script>
+  <script defer src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 </head>
 
 <body>
@@ -29,45 +31,36 @@
     <div id="menu"><i class="fa-solid fa-bars-staggered"></i></div>
   </header>
 
-  <section class="content department">
+  <section class="content gallery">
     <div class="inner_top">
       <div class="bg_deep"></div>
       <div class="txt_box">
         <span>MEETOUR</span>
-        <h1>TEAM</h1>
+        <h1>GALLERY</h1>
         <P class="ex_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusantium aliquid delectus
           quia! Soluta,
           nobis!</P>
       </div>
-      <div class="txt">TEAM</div>
+      <!-- <div class="txt">TEAM</div> -->
     </div>
-    <div class="wrap">
-
-    </div>
-    <section id="things">
-
-      <div class="content">
-        <div class="sub_txt">A</div>
-        <div class="content_txt">
-          <h1 class="mb_35">About<span> Mobilex</span></h1>
-
-          <p class="ex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sapiente sunt et ex dolorum
-            accusamus atque iusto harum esse ipsum, voluptatem quibusdam accusantium laborum tenetur qui ad dignissimos
-            vel at. Ducimus cum ab doloremque fugiat libero corrupti! Ea repudiandae laudantium quo, optio pariatur fuga
-            maiores nobis est molestiae magnam reiciendis aliquam, blanditiis odit inventore at? Modi esse quo
-            consequuntur incidunt necessitatibus maxime exercitationem ipsam, nulla aperiam iusto magnam magni earum.
-          </p>
-          <p class="ex it">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure recusandae corrupti mollitia
-            dolor repellendus quia reiciendis, quisquam tempora asperiores ducimus.</p>
-
-          <span class="line_deco_02"></span>
+    <div class="content_wrap">
+      <img src="img/loading.gif" alt="loading" class="loading">
+      <div class="searchBox">
+        <div>
+          <input type="text" id="search" placeholder="검색어입력">
+          <button class="btn_search">Search</button>
         </div>
 
+        <div class="btnSet">
+          <button class="btnInterest">Interest Gallery</button>
+          <button class="btnMine">My Gallery</button>
+        </div>
       </div>
 
-    </section>
+      <ul class="wrap">
+      </ul>
+    </div>
   </section>
-
   <footer>
     <div class="content">
       <div class="left_box">

@@ -142,11 +142,23 @@
 	.big_txt_sub {
 		font-size: 70vw;
 	}
+	.sub_txt {
+		font-size: 50vw;
+		top: -100px;
+	}
 }
 
 @media screen and (max-width: $mobile) {
 	.big_txt_sub {
 		font-size: 100vw;
 		margin-left: -50px;
+	}
+	.sub_txt {
+		font-size: 60vw;
+		top: -120px;
+		right: -50px;
+	}
+	.line_deco_02 {
+		width: 90px;
 	}
 }

@@ -80,7 +80,7 @@
 	width: 100%;
 	height: auto;
 	background: #232427;
-	overflow: hidden;
+	// overflow: hidden;
 
 	.content {
 		position: relative;
@@ -162,7 +162,8 @@
 #gallery {
 	position: relative;
 	width: $widthContent;
-	margin: 100px auto;
+	padding-bottom: 100px;
+	margin: 100px auto 0;
 	text-align: center;
 
 	h1 {
@@ -498,48 +499,70 @@
 	}
 }
 @media screen and (max-width: 572px) {
-	#things {
-		.big_txt {
-			font-size: 90vw;
-			margin-right: -30px;
-		}
-		.content {
-			.content_txt {
-				margin: 50px 0;
+	main {
+		overflow: hidden;
+
+		#things {
+			.big_txt {
+				font-size: 90vw;
+				margin-right: -30px;
 			}
-		}
-		#gallery {
-			margin: 70px auto 50px;
-			.img_box {
-				figure {
-					height: 450px;
+			.content {
+				.content_txt {
+					margin: 50px 0;
+					h1 {
+						font-size: 27px;
+					}
+				}
+			}
+			#gallery {
+				padding-bottom: 50px;
+				margin: 70px auto 0;
+
+				h1 {
+					font-size: 27px;
+				}
+				.img_box {
+					figure {
+						height: 450px;
+					}
 				}
 			}
 		}
-	}
-	#news {
-		.content {
-			h1 {
-				padding: 70px 0 33px;
-			}
-			.txt_box {
-				margin-top: 50px;
-			}
-			.contact {
-				padding: 70px 0;
+		#news {
+			.content {
+				h1 {
+					padding: 70px 0 33px;
+					font-size: 27px;
+				}
+				.txt_box {
+					margin-top: 50px;
+				}
+				.contact {
+					padding: 70px 0;
 
-				.area_3 {
-					flex-wrap: wrap;
-					padding: 40px 0 0;
-					gap: 35px;
-					.area_inner {
-						text-align: center;
-						p {
-							margin-top: 25px;
+					.contect_title {
+						h2 {
+							font-size: 27px;
 						}
-						ul {
-							li {
-								display: inline-block;
+						button {
+							width: 150px;
+						}
+					}
+
+					.area_3 {
+						flex-wrap: wrap;
+						padding: 40px 0 0;
+						gap: 35px;
+						.area_inner {
+							text-align: center;
+							p {
+								margin-top: 25px;
+							}
+							ul {
+								li {
+									display: inline-block;
+								}
 							}
 						}
 					}

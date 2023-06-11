@@ -161,6 +161,14 @@
 
 				&:nth-child(2) {
 					top: auto;
+					&::before {
+						display: none;
+					}
+				}
+				&:nth-child(3) {
+					&::before {
+						display: none;
+					}
 				}
 				&:nth-child(3),
 				&:nth-child(4),
@@ -179,16 +187,6 @@
 		.wrap {
 			article {
 				width: calc(100% / 1);
-				&:nth-child(2) {
-					&::before {
-						display: none;
-					}
-				}
-				&:nth-child(3) {
-					&::before {
-						display: none;
-					}
-				}
 			}
 		}
 	}

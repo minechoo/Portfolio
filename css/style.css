@@ -1181,6 +1181,12 @@ footer .content .right_box .right_box_inner li {
   .department .wrap article:nth-child(2) {
     top: auto;
   }
+  .department .wrap article:nth-child(2)::before {
+    display: none;
+  }
+  .department .wrap article:nth-child(3)::before {
+    display: none;
+  }
   .department .wrap article:nth-child(3), .department .wrap article:nth-child(4), .department .wrap article:nth-child(5), .department .wrap article:nth-child(6) {
     margin-top: 0;
   }
@@ -1191,12 +1197,6 @@ footer .content .right_box .right_box_inner li {
   }
   .department .wrap article {
     width: 100%;
-  }
-  .department .wrap article:nth-child(2)::before {
-    display: none;
-  }
-  .department .wrap article:nth-child(3)::before {
-    display: none;
   }
 }
 .youtube {

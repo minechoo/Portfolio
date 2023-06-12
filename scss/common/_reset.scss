@@ -124,13 +124,25 @@ q:after {
 	content: '';
 	content: none;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 a {
 	text-decoration: none;
 }
 button {
 	border: none;
+}
+fieldset {
+	border: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input,
+label {
+	vertical-align: middle;
+}
+.h {
+	position: absolute;
+	top: -99999px;
+	opacity: 0;
 }

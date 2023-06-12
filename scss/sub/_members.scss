@@ -1,0 +1,116 @@
+.members {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background: #232427;
+
+	.content_wrap {
+		position: relative;
+		width: $widthSub;
+		margin: 0 auto;
+		padding-bottom: 150px;
+
+		form {
+			table {
+				width: 100%;
+				border: none;
+				border-top: 2px solid $red;
+				border-bottom: 2px solid $orange;
+
+				th,
+				td {
+					border: none;
+					border-bottom: 1px solid #787878;
+					padding: 16px 25px;
+				}
+				th {
+					width: 20%;
+					color: $red;
+					text-align: right;
+
+					label {
+						color: $red;
+					}
+
+					input[type='submit'],
+					input[type='reset'] {
+						width: 30%;
+						height: 40px;
+						border: 1px solid transparent;
+						border-image: linear-gradient(to right, $red 0%, $orange 100%);
+						border-image-slice: 1;
+						margin: 10px;
+						font-size: 700;
+						font-size: 14px;
+						line-height: 38px;
+						color: #fff;
+						cursor: pointer;
+						transition: 0.5s;
+						background: none;
+
+						&:hover {
+							background-image: linear-gradient(to right, $red, $orange);
+						}
+					}
+				}
+
+				td {
+					border-left: 1px solid #787878;
+					color: #787878;
+
+					label {
+						color: $orange;
+					}
+
+					input[type='text'],
+					input[type='password'],
+					input[type='email'],
+					select,
+					textarea {
+						width: 60%;
+						background: transparent;
+						padding: 10px;
+						color: #787878;
+						border: 1px solid #787878;
+						resize: none;
+						box-sizing: border-box;
+					}
+					input[type='checkbox'],
+					input[type='radio'] {
+						margin-right: 30px;
+					}
+
+					.select {
+						position: relative;
+						width: 60%;
+
+						select {
+							width: 100%;
+							-webkit-appearance: none;
+							-moz-appearance: none;
+							-o-appearance: none;
+							appearance: none;
+						}
+
+						.select_arrow {
+							position: absolute;
+							right: 15px;
+							top: 12px;
+							width: 8px;
+							height: 8px;
+							border-top: 2px solid $red;
+							border-right: 2px solid $red;
+							transform: rotate(135deg);
+						}
+					}
+
+					p {
+						color: $orange;
+						margin-top: 5px;
+						font: 11px/1 '맑은 고딕';
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body,
 div,
@@ -130,17 +131,32 @@ q:after {
   content: none;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 a {
   text-decoration: none;
 }
 
 button {
   border: none;
+}
+
+fieldset {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,
+label {
+  vertical-align: middle;
+}
+
+.h {
+  position: absolute;
+  top: -99999px;
+  opacity: 0;
 }
 
 /** =================== MONTSERRAT =================== **/
@@ -266,6 +282,10 @@ button {
 
 .mb_35 {
   margin-bottom: 35px;
+}
+
+.t_center {
+  text-align: center !important;
 }
 
 @media screen and (max-width: 1920px) {
@@ -1468,6 +1488,108 @@ footer .content .right_box .right_box_inner li {
   .gallery .content_wrap .wrap li {
     width: 100%;
   }
+}
+.members {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: #232427;
+}
+.members .content_wrap {
+  position: relative;
+  width: 923px;
+  margin: 0 auto;
+  padding-bottom: 150px;
+}
+.members .content_wrap form table {
+  width: 100%;
+  border: none;
+  border-top: 2px solid #cd5772;
+  border-bottom: 2px solid #ce6a52;
+}
+.members .content_wrap form table th,
+.members .content_wrap form table td {
+  border: none;
+  border-bottom: 1px solid #787878;
+  padding: 16px 25px;
+}
+.members .content_wrap form table th {
+  width: 20%;
+  color: #cd5772;
+  text-align: right;
+}
+.members .content_wrap form table th label {
+  color: #cd5772;
+}
+.members .content_wrap form table th input[type=submit],
+.members .content_wrap form table th input[type=reset] {
+  width: 30%;
+  height: 40px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, #cd5772 0%, #ce6a52 100%);
+  border-image-slice: 1;
+  margin: 10px;
+  font-size: 700;
+  font-size: 14px;
+  line-height: 38px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+  background: none;
+}
+.members .content_wrap form table th input[type=submit]:hover,
+.members .content_wrap form table th input[type=reset]:hover {
+  background-image: linear-gradient(to right, #cd5772, #ce6a52);
+}
+.members .content_wrap form table td {
+  border-left: 1px solid #787878;
+  color: #787878;
+}
+.members .content_wrap form table td label {
+  color: #ce6a52;
+}
+.members .content_wrap form table td input[type=text],
+.members .content_wrap form table td input[type=password],
+.members .content_wrap form table td input[type=email],
+.members .content_wrap form table td select,
+.members .content_wrap form table td textarea {
+  width: 60%;
+  background: transparent;
+  padding: 10px;
+  color: #787878;
+  border: 1px solid #787878;
+  resize: none;
+  box-sizing: border-box;
+}
+.members .content_wrap form table td input[type=checkbox],
+.members .content_wrap form table td input[type=radio] {
+  margin-right: 30px;
+}
+.members .content_wrap form table td .select {
+  position: relative;
+  width: 60%;
+}
+.members .content_wrap form table td .select select {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.members .content_wrap form table td .select .select_arrow {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #cd5772;
+  border-right: 2px solid #cd5772;
+  transform: rotate(135deg);
+}
+.members .content_wrap form table td p {
+  color: #ce6a52;
+  margin-top: 5px;
+  font: 11px/1 "맑은 고딕";
 }
 
 /*# sourceMappingURL=style.css.map */

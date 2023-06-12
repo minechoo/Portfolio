@@ -33,32 +33,35 @@
 			padding: 0 10px;
 			font-size: 0;
 
-			input {
-				width: 260px;
-				height: 30px;
-				padding-left: 10px;
-				background: transparent;
-				box-sizing: border-box;
-				color: #eee;
-				border: 1px solid transparent;
-				border-image: linear-gradient(to right, $red 0%, $orange 100%);
-				border-image-slice: 1;
-			}
-			.btn_search {
-				width: 80px;
-				height: 30px;
-				margin-left: 5px;
-				color: $red;
-				font-weight: 500;
-				font-size: 12px;
-				line-height: 28px;
-				text-align: center;
-				background: transparent;
-				cursor: pointer;
-				border: 1px solid transparent;
-				border-image: linear-gradient(to right, $red 0%, $orange 100%);
-				border-image-slice: 1;
-				transform: translateY(1px);
+			.search {
+				display: flex;
+
+				input {
+					width: 260px;
+					height: 30px;
+					padding-left: 10px;
+					background: transparent;
+					box-sizing: border-box;
+					color: #eee;
+					border: 1px solid transparent;
+					border-image: linear-gradient(to right, $red 0%, $orange 100%);
+					border-image-slice: 1;
+				}
+				.btn_search {
+					width: 80px;
+					height: 30px;
+					margin-left: 5px;
+					color: $red;
+					font-weight: 500;
+					font-size: 12px;
+					line-height: 28px;
+					text-align: center;
+					background: transparent;
+					cursor: pointer;
+					border: 1px solid transparent;
+					border-image: linear-gradient(to right, $red 0%, $orange 100%);
+					border-image-slice: 1;
+				}
 			}
 		}
 		.btnSet {
@@ -182,14 +185,16 @@
 	.gallery {
 		.content_wrap {
 			.searchBox {
-				display: block;
-				input {
-					width: 100%;
-				}
-				.btn_search {
-					width: 100%;
-					margin-left: 0;
-					margin-bottom: 10px;
+				.search {
+					display: block;
+					input {
+						width: 100%;
+					}
+					.btn_search {
+						width: 100%;
+						margin-left: 0;
+						margin-bottom: 10px;
+					}
 				}
 				.btnSet {
 					button {

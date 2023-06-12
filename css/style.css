@@ -1346,7 +1346,10 @@ footer .content .right_box .right_box_inner li {
   padding: 0 10px;
   font-size: 0;
 }
-.gallery .content_wrap .searchBox input {
+.gallery .content_wrap .searchBox .search {
+  display: flex;
+}
+.gallery .content_wrap .searchBox .search input {
   width: 260px;
   height: 30px;
   padding-left: 10px;
@@ -1357,7 +1360,7 @@ footer .content .right_box .right_box_inner li {
   border-image: linear-gradient(to right, #cd5772 0%, #ce6a52 100%);
   border-image-slice: 1;
 }
-.gallery .content_wrap .searchBox .btn_search {
+.gallery .content_wrap .searchBox .search .btn_search {
   width: 80px;
   height: 30px;
   margin-left: 5px;
@@ -1371,7 +1374,6 @@ footer .content .right_box .right_box_inner li {
   border: 1px solid transparent;
   border-image: linear-gradient(to right, #cd5772 0%, #ce6a52 100%);
   border-image-slice: 1;
-  transform: translateY(1px);
 }
 .gallery .content_wrap .btnSet {
   font-size: 0;
@@ -1469,13 +1471,13 @@ footer .content .right_box .right_box_inner li {
   }
 }
 @media screen and (max-width: 639px) {
-  .gallery .content_wrap .searchBox {
+  .gallery .content_wrap .searchBox .search {
     display: block;
   }
-  .gallery .content_wrap .searchBox input {
+  .gallery .content_wrap .searchBox .search input {
     width: 100%;
   }
-  .gallery .content_wrap .searchBox .btn_search {
+  .gallery .content_wrap .searchBox .search .btn_search {
     width: 100%;
     margin-left: 0;
     margin-bottom: 10px;

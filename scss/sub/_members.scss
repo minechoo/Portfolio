@@ -67,7 +67,7 @@
 					input[type='email'],
 					select,
 					textarea {
-						width: 60%;
+						width: 70%;
 						background: transparent;
 						padding: 10px;
 						color: #787878;
@@ -82,7 +82,7 @@
 
 					.select {
 						position: relative;
-						width: 60%;
+						width: 70%;
 
 						select {
 							width: 100%;
@@ -90,18 +90,40 @@
 							-moz-appearance: none;
 							-o-appearance: none;
 							appearance: none;
+							background: url(../../img/ico_arrow.svg) no-repeat center right 10px;
+							background-size: 27px 15px;
 						}
+					}
+					input[type='checkbox'],
+					input[type='radio'] {
+						position: absolute;
+						width: 0;
+						height: 0;
+						overflow: hidden;
+					}
 
-						.select_arrow {
-							position: absolute;
-							right: 15px;
-							top: 12px;
-							width: 8px;
-							height: 8px;
-							border-top: 2px solid $red;
-							border-right: 2px solid $red;
-							transform: rotate(135deg);
-						}
+					input[type='radio'] + label {
+						display: inline-block;
+						cursor: pointer;
+						line-height: 22px;
+						padding-left: 27px;
+						margin-right: 10px;
+						background: url('../../img/ico_radio_off.svg') left/22px no-repeat;
+					}
+					input[type='radio']:checked + label {
+						background-image: url('../../img/ico_radio_on.svg');
+					}
+
+					input[type='checkbox'] + label {
+						display: inline-block;
+						cursor: pointer;
+						line-height: 22px;
+						padding-left: 27px;
+						margin-right: 10px;
+						background: url('../../img/ico_check_off.svg') left/22px no-repeat;
+					}
+					input[type='checkbox']:checked + label {
+						background-image: url('../../img/ico_check_on.svg');
 					}
 
 					p {

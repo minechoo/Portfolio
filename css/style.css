@@ -1577,7 +1577,7 @@ footer .content .right_box .right_box_inner li {
   -moz-appearance: none;
   -o-appearance: none;
   appearance: none;
-  background: url(../../img/ico_arrow.svg) no-repeat center right 10px;
+  background: url(../img/ico_arrow.svg) no-repeat center right 10px;
   background-size: 27px 15px;
 }
 .members .content_wrap form table td input[type=checkbox],
@@ -1593,10 +1593,10 @@ footer .content .right_box .right_box_inner li {
   line-height: 22px;
   padding-left: 27px;
   margin-right: 10px;
-  background: url("../../img/ico_radio_off.svg") left/22px no-repeat;
+  background: url("../img/ico_radio_off.svg") left/22px no-repeat;
 }
 .members .content_wrap form table td input[type=radio]:checked + label {
-  background-image: url("../../img/ico_radio_on.svg");
+  background-image: url("../img/ico_radio_on.svg");
 }
 .members .content_wrap form table td input[type=checkbox] + label {
   display: inline-block;
@@ -1604,10 +1604,10 @@ footer .content .right_box .right_box_inner li {
   line-height: 22px;
   padding-left: 27px;
   margin-right: 10px;
-  background: url("../../img/ico_check_off.svg") left/22px no-repeat;
+  background: url("../img/ico_check_off.svg") left/22px no-repeat;
 }
 .members .content_wrap form table td input[type=checkbox]:checked + label {
-  background-image: url("../../img/ico_check_on.svg");
+  background-image: url("../img/ico_check_on.svg");
 }
 .members .content_wrap form table td p {
   color: #ce6a52;

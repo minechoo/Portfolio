@@ -40,7 +40,7 @@
 						border-image: linear-gradient(to right, $red 0%, $orange 100%);
 						border-image-slice: 1;
 						margin: 10px;
-						font-size: 700;
+						font-weight: 600;
 						font-size: 14px;
 						line-height: 38px;
 						color: #fff;
@@ -130,6 +130,83 @@
 						color: $orange;
 						margin-top: 5px;
 						font: 11px/1 '맑은 고딕';
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1060px) {
+	.members {
+		.content_wrap {
+			width: $width90;
+		}
+	}
+}
+@media screen and (max-width: 669px) {
+	.members {
+		.content_wrap {
+			padding-bottom: 100px;
+			form {
+				table {
+					td {
+						input[type='text'],
+						input[type='password'],
+						input[type='email'],
+						select,
+						textarea,
+						.select {
+							width: 100%;
+						}
+
+						input[type='checkbox'] + label {
+							height: 30px;
+							line-height: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 540px) {
+	.members {
+		.content_wrap {
+			padding-bottom: 80px;
+			form {
+				table {
+					th {
+						display: block;
+						width: 100%;
+						padding: 16px 3%;
+						text-align: center;
+						box-sizing: border-box;
+
+						&:last-child {
+							border-bottom: 0;
+						}
+
+						input[type='submit'],
+						input[type='reset'] {
+							width: 100%;
+							margin: 0;
+							margin-bottom: 10px;
+						}
+					}
+
+					td {
+						display: block;
+						width: 100%;
+						padding: 16px 3%;
+						border-left: none;
+						box-sizing: border-box;
+
+						input[type='text'],
+						input[type='password'],
+						input[type='email'],
+						select,
+						textarea {
+						}
 					}
 				}
 			}

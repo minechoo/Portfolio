@@ -7,15 +7,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원가입</title>
-    <meta name="description" content="회원가입" />
-    <meta name="keywords" content="회원가입" />
+    <title>location</title>
+    <meta name="description" content="location" />
+    <meta name="keywords" content="location" />
     <meta name="author" content="추민해" />
     <link rel="shortcut icon" href="img/favicon.ico">
     <script src="https://kit.fontawesome.com/31531ce94a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-
-    <script defer src="js/form.js"></script>
+    <script type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=906c6c02e459a1967e6bebf4ed54308a"></script>
+    <script defer src="js/location.js"></script>
   </head>
 
 <body>
@@ -32,18 +33,27 @@
     <div id="menu"><i class="fa-solid fa-bars-staggered"></i></div>
   </header>
 
-  <section class="content members">
+  <section class="content location">
     <div class="inner_top">
       <div class="bg_deep"></div>
       <div class="txt_box">
         <span>MEETOUR</span>
-        <h1>RESULT</h1>
+        <h1>LOCATION</h1>
         <P class="ex_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusantium aliquid delectus
           quia! Soluta,
           nobis!</P>
       </div>
+      <!-- <div class="txt">TEAM</div> -->
     </div>
     <div class="content_wrap">
+      <section class="map_wrap">
+        <div id="map"></div>
+      </section>
+      <ul class="branch">
+        <li>본점</li>
+        <li>지점 A</li>
+        <li>지점 C</li>
+      </ul>
     </div>
   </section>
 

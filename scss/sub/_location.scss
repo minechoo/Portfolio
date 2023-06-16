@@ -1,0 +1,60 @@
+.location {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background: #232427;
+	padding-bottom: 150px;
+
+	.content_wrap {
+		position: relative;
+		width: 1460px;
+		margin: 0 auto;
+
+		.map_wrap {
+			border: 1px solid transparent;
+			border-image: linear-gradient(to right, $red 0%, $orange 100%);
+			border-image-slice: 1;
+			padding: 20px;
+
+			#map {
+				width: 100%;
+				height: 430px;
+			}
+		}
+		.branch {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			gap: 15px;
+			margin: 15px 0;
+
+			li {
+				width: 200px;
+				height: 40px;
+				border: 1px solid transparent;
+				border-image: linear-gradient(to right, $red 0%, $orange 100%);
+				border-image-slice: 1;
+				color: #fff;
+				font-size: 17px;
+				line-height: 40px;
+				font-weight: 300;
+				text-align: center;
+				cursor: pointer;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1538px) {
+	.location {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		background: #232427;
+		padding-bottom: 150px;
+
+		.content_wrap {
+			position: relative;
+			width: $width90;
+		}
+	}
+}

@@ -1,3 +1,6 @@
+body {
+	background: #232427;
+}
 #wrap_first {
 	position: relative;
 	width: 100%;
@@ -162,8 +165,8 @@
 #gallery {
 	position: relative;
 	width: $widthContent;
-	padding-bottom: 100px;
-	margin: 100px auto 0;
+	padding: 100px 0;
+	margin: 0 auto;
 	text-align: center;
 
 	h1 {
@@ -367,6 +370,28 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+.indicate {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 50px;
+
+	li {
+		width: 10px;
+		height: 10px;
+		border-radius: 5px;
+		background: #fff;
+		margin-bottom: 20px;
+		cursor: pointer;
+		transition: 0.5s;
+
+		&.on {
+			height: 100px;
+			background-image: linear-gradient(to bottom, #cd5772, #db755a);
 		}
 	}
 }

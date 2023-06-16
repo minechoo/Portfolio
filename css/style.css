@@ -590,6 +590,10 @@ footer .content .right_box .right_box_inner li {
     right: 30px;
   }
 }
+body {
+  background: #232427;
+}
+
 #wrap_first {
   position: relative;
   width: 100%;
@@ -732,8 +736,8 @@ footer .content .right_box .right_box_inner li {
 #gallery {
   position: relative;
   width: 1400px;
-  padding-bottom: 100px;
-  margin: 100px auto 0;
+  padding: 100px 0;
+  margin: 0 auto;
   text-align: center;
 }
 #gallery h1 {
@@ -916,6 +920,26 @@ footer .content .right_box .right_box_inner li {
   color: #63666e;
   margin-left: 17px;
   line-height: 1.5;
+}
+
+.indicate {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 50px;
+}
+.indicate li {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #fff;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.indicate li.on {
+  height: 100px;
+  background-image: linear-gradient(to bottom, #cd5772, #db755a);
 }
 
 @media screen and (max-width: 1440px) {
@@ -1663,6 +1687,62 @@ footer .content .right_box .right_box_inner li {
     padding: 16px 3%;
     border-left: none;
     box-sizing: border-box;
+  }
+}
+.location {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: #232427;
+  padding-bottom: 150px;
+}
+.location .content_wrap {
+  position: relative;
+  width: 1460px;
+  margin: 0 auto;
+}
+.location .content_wrap .map_wrap {
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, #cd5772 0%, #ce6a52 100%);
+  border-image-slice: 1;
+  padding: 20px;
+}
+.location .content_wrap .map_wrap #map {
+  width: 100%;
+  height: 430px;
+}
+.location .content_wrap .branch {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+.location .content_wrap .branch li {
+  width: 200px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, #cd5772 0%, #ce6a52 100%);
+  border-image-slice: 1;
+  color: #fff;
+  font-size: 17px;
+  line-height: 40px;
+  font-weight: 300;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1538px) {
+  .location {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #232427;
+    padding-bottom: 150px;
+  }
+  .location .content_wrap {
+    position: relative;
+    width: 90%;
   }
 }
 

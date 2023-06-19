@@ -747,7 +747,7 @@ body {
   color: #fff;
   line-height: 1;
   text-align: center;
-  transform: translateX(100px);
+  transform: translateY(100px);
   opacity: 0;
   transition: 1s;
 }
@@ -805,7 +805,7 @@ body {
 }
 
 #gallery.on h1 {
-  transform: translateX(0px);
+  transform: translateY(0px);
   opacity: 1;
 }
 #gallery.on .img_box figure {

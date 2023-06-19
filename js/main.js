@@ -5,7 +5,7 @@ const speed = 500;
 let enableEvent = true;
 let autoScroll = true;
 let eventBlocker = null;
-const baseline = -window.innerHeight / 2;
+const baseline = -300;
 
 window.addEventListener('scroll', () => {
 	if (eventBlocker) return;

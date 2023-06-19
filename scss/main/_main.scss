@@ -129,6 +129,9 @@ body {
 		font-size: 50vw;
 		color: #1a1a1f;
 		font-weight: 900;
+		transform: scale(1.2);
+		opacity: 0;
+		transition: 1s;
 	}
 
 	#youtube {
@@ -161,6 +164,12 @@ body {
 		}
 	}
 }
+#things.on {
+	.big_txt {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
 
 #gallery {
 	position: relative;
@@ -176,7 +185,7 @@ body {
 		color: #fff;
 		line-height: 1;
 		text-align: center;
-		transform: translateY(100px);
+		transform: translateY(-70px);
 		opacity: 0;
 		transition: 1s;
 	}

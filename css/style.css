@@ -707,6 +707,9 @@ body {
   font-size: 50vw;
   color: #1a1a1f;
   font-weight: 900;
+  transform: scale(1.2);
+  opacity: 0;
+  transition: 1s;
 }
 #things #youtube {
   position: relative;
@@ -733,6 +736,11 @@ body {
   opacity: 0.7;
 }
 
+#things.on .big_txt {
+  transform: scale(1);
+  opacity: 1;
+}
+
 #gallery {
   position: relative;
   width: 1400px;
@@ -747,7 +755,7 @@ body {
   color: #fff;
   line-height: 1;
   text-align: center;
-  transform: translateY(100px);
+  transform: translateY(-70px);
   opacity: 0;
   transition: 1s;
 }

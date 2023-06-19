@@ -747,7 +747,7 @@ body {
   color: #fff;
   line-height: 1;
   text-align: center;
-  transform: translateX(200px);
+  transform: translateX(100px);
   opacity: 0;
   transition: 1s;
 }

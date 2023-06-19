@@ -5,7 +5,7 @@ const speed = 500;
 let enableEvent = true;
 let autoScroll = true;
 let eventBlocker = null;
-const baseline = -300;
+const baseline = -200;
 
 window.addEventListener('scroll', () => {
 	if (eventBlocker) return;
@@ -31,6 +31,10 @@ btns.forEach((btn, idx) => {
 
 function activation() {
 	const scroll = window.scrollY;
+
+	if (scroll <= 500) {
+		for (const el of secs) el.classList.remove('on');
+	}
 
 	secs.forEach((_, idx) => {
 		if (scroll >= secs[idx].offsetTop + baseline) {

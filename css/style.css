@@ -1766,16 +1766,37 @@ body {
   width: 100%;
   height: 430px;
 }
-.location .content_wrap .branch {
+.location .content_wrap .btn_map_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.location .content_wrap .btn_map_wrap .branch {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 15px;
   margin: 15px 0;
 }
-.location .content_wrap .branch li {
+.location .content_wrap .btn_map_wrap .branch li {
   width: 200px;
   height: 40px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, #cd5772 0%, #ce6a52 100%);
+  border-image-slice: 1;
+  color: #fff;
+  font-size: 17px;
+  line-height: 40px;
+  font-weight: 300;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.location .content_wrap .btn_map_wrap .btnToggle {
+  width: 200px;
+  height: 40px;
+  background: none;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, #cd5772 0%, #ce6a52 100%);
   border-image-slice: 1;
@@ -1798,6 +1819,14 @@ body {
   .location .content_wrap {
     position: relative;
     width: 90%;
+  }
+  .location .content_wrap .btn_map_wrap .btnToggle,
+  .location .content_wrap .btn_map_wrap .branch {
+    flex: 1;
+  }
+  .location .content_wrap .btn_map_wrap .btnToggle li,
+  .location .content_wrap .btn_map_wrap .branch li {
+    flex: 1;
   }
 }
 

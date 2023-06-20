@@ -1,5 +1,8 @@
 const mapContainer = document.querySelector('#map');
 const btns = document.querySelectorAll('.branch li');
+const btnToggle = document.querySelector('.btnToggle');
+let active_index = 0;
+let toggle = false;
 
 const markerInfo = [
 	{
@@ -37,4 +40,19 @@ markerInfo.forEach((info) => {
 	});
 	marker.setMap(map);
 	info.button.addEventListener('click', () => map.panTo(info.position));
+});
+
+window.addEventListener('resize', () => {
+	map.setCenter(markerInfo[active_index].position);
+});
+
+btnToggle.addEventListener('click', () => {
+	toggle = !toggle;
+	if (toggle) {
+		map.addOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);
+		btnToggle.innerHTML = 'Traffic ON';
+	} else {
+		map.removeOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);
+		btnToggle.innerHTML = 'Traffic OFF';
+	}
 });

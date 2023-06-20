@@ -1820,6 +1820,8 @@ body {
     position: relative;
     width: 90%;
   }
+}
+@media screen and (max-width: 999px) {
   .location .content_wrap .btn_map_wrap .btnToggle,
   .location .content_wrap .btn_map_wrap .branch {
     flex: 1;
@@ -1827,6 +1829,16 @@ body {
   .location .content_wrap .btn_map_wrap .btnToggle li,
   .location .content_wrap .btn_map_wrap .branch li {
     flex: 1;
+    width: fit-content;
+  }
+}
+@media screen and (max-width: 639px) {
+  .location .content_wrap .btn_map_wrap {
+    display: block;
+    margin-top: 15px;
+  }
+  .location .content_wrap .btn_map_wrap .btnToggle {
+    width: 100%;
   }
 }
 

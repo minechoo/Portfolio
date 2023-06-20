@@ -77,15 +77,32 @@
 		.content_wrap {
 			position: relative;
 			width: $width90;
+		}
+	}
+}
+@media screen and (max-width: $tablet) {
+	.location {
+		.content_wrap {
 			.btn_map_wrap {
 				.btnToggle,
 				.branch {
 					flex: 1;
-					// width: fit-content;
 					li {
 						flex: 1;
+						width: fit-content;
 					}
 				}
+			}
+		}
+	}
+}
+@media screen and (max-width: $mobile) {
+	.location .content_wrap {
+		.btn_map_wrap {
+			display: block;
+			margin-top: 15px;
+			.btnToggle {
+				width: 100%;
 			}
 		}
 	}

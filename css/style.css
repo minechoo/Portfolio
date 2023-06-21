@@ -1807,6 +1807,64 @@ body {
   text-align: center;
   cursor: pointer;
 }
+.location .content_wrap .contact {
+  width: 100%;
+}
+.location .content_wrap .contact h2 {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  margin: 100px 0 30px;
+}
+.location .content_wrap .contact #contact-form {
+  width: 100%;
+  padding: 40px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, #cd5772 0%, #ce6a52 100%);
+  border-image-slice: 1;
+  box-sizing: border-box;
+}
+.location .content_wrap .contact #contact-form .input_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 20px;
+}
+.location .content_wrap .contact #contact-form .input_area .input_inner {
+  width: 50%;
+}
+.location .content_wrap .contact #contact-form label {
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  line-height: 36px;
+  vertical-align: top;
+}
+.location .content_wrap .contact #contact-form input,
+.location .content_wrap .contact #contact-form textarea {
+  background: transparent;
+  padding: 10px;
+  color: #787878;
+  border: 1px solid #787878;
+  box-sizing: border-box;
+}
+.location .content_wrap .contact #contact-form input {
+  width: 100%;
+}
+.location .content_wrap .contact #contact-form textarea {
+  width: 100%;
+}
+.location .content_wrap .contact #contact-form .btn_submit {
+  width: 200px;
+  margin-top: 15px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, #cd5772 0%, #ce6a52 100%);
+  border-image-slice: 1;
+  color: #fff;
+  font-size: 17px;
+}
 
 @media screen and (max-width: 1538px) {
   .location {
@@ -1833,11 +1891,32 @@ body {
   }
 }
 @media screen and (max-width: 639px) {
+  .location {
+    padding-bottom: 100px;
+  }
   .location .content_wrap .btn_map_wrap {
     display: block;
     margin-top: 15px;
   }
   .location .content_wrap .btn_map_wrap .btnToggle {
+    width: 100%;
+  }
+  .location .content_wrap .contact h2 {
+    margin: 50px 0 30px;
+  }
+  .location .content_wrap .contact #contact-form {
+    padding: 30px;
+  }
+  .location .content_wrap .contact #contact-form .input_area {
+    display: block;
+  }
+  .location .content_wrap .contact #contact-form .input_area .input_inner {
+    width: 100%;
+  }
+  .location .content_wrap .contact #contact-form input {
+    margin-bottom: 15px;
+  }
+  .location .content_wrap .contact #contact-form .btn_submit {
     width: 100%;
   }
 }

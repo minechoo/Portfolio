@@ -64,6 +64,69 @@
 				cursor: pointer;
 			}
 		}
+		.contact {
+			width: 100%;
+
+			h2 {
+				color: #fff;
+				width: 100%;
+				text-align: center;
+				font-size: 30px;
+				margin: 100px 0 30px;
+			}
+
+			#contact-form {
+				width: 100%;
+				padding: 40px;
+				border: 1px solid transparent;
+				border-image: linear-gradient(to right, $red 0%, $orange 100%);
+				border-image-slice: 1;
+				box-sizing: border-box;
+
+				.input_area {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					margin-bottom: 15px;
+					gap: 20px;
+
+					.input_inner {
+						width: 50%;
+					}
+				}
+
+				label {
+					display: inline-block;
+					width: 100%;
+					color: #fff;
+					line-height: 36px;
+					vertical-align: top;
+				}
+				input,
+				textarea {
+					background: transparent;
+					padding: 10px;
+					color: #787878;
+					border: 1px solid #787878;
+					box-sizing: border-box;
+				}
+				input {
+					width: 100%;
+				}
+				textarea {
+					width: 100%;
+				}
+				.btn_submit {
+					width: 200px;
+					margin-top: 15px;
+					border: 1px solid transparent;
+					border-image: linear-gradient(to right, $red 0%, $orange 100%);
+					border-image-slice: 1;
+					color: #fff;
+					font-size: 17px;
+				}
+			}
+		}
 	}
 }
 @media screen and (max-width: 1538px) {
@@ -97,12 +160,37 @@
 	}
 }
 @media screen and (max-width: $mobile) {
-	.location .content_wrap {
-		.btn_map_wrap {
-			display: block;
-			margin-top: 15px;
-			.btnToggle {
-				width: 100%;
+	.location {
+		padding-bottom: 100px;
+
+		.content_wrap {
+			.btn_map_wrap {
+				display: block;
+				margin-top: 15px;
+				.btnToggle {
+					width: 100%;
+				}
+			}
+			.contact {
+				h2 {
+					margin: 50px 0 30px;
+				}
+				#contact-form {
+					padding: 30px;
+
+					.input_area {
+						display: block;
+						.input_inner {
+							width: 100%;
+						}
+					}
+					input {
+						margin-bottom: 15px;
+					}
+					.btn_submit {
+						width: 100%;
+					}
+				}
 			}
 		}
 	}

@@ -10,7 +10,15 @@ body {
 	justify-content: center;
 	align-items: center;
 
+	.video_wrap {
+		position: absolute;
+		video {
+			width: 100%;
+		}
+	}
+
 	.txt_main {
+		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;

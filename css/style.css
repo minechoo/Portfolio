@@ -603,7 +603,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+#wrap_first .video_wrap {
+  position: absolute;
+}
+#wrap_first .video_wrap video {
+  width: 100%;
+}
 #wrap_first .txt_main {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;

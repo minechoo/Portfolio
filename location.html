@@ -14,6 +14,7 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <script src="https://kit.fontawesome.com/31531ce94a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/header.js"></script>
     <script type="text/javascript"
       src="//dapi.kakao.com/v2/maps/sdk.js?appkey=906c6c02e459a1967e6bebf4ed54308a"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -45,14 +46,19 @@
 <body>
   <header>
     <h1><a href="index.html">MOBILE</a></h1>
-    <ul id="gnb">
-      <li><a href="department.html">DEORARTMENT</a></li>
-      <li><a href="community.html">COMMUNITY</a></li>
-      <li><a href="gallery.html">GALLERY</a></li>
-      <li><a href="youtube.html">YOUTUBE</a></li>
-      <li><a href="members.html">MEMBERS</a></li>
-      <li><a href="location.html">LOCATION</a></li>
-    </ul>
+    <div class="gnb_wrap">
+      <ul id="gnb">
+        <li><a href="department.html">DEORARTMENT</a></li>
+        <li><a href="community.html">COMMUNITY</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="youtube.html">YOUTUBE</a></li>
+        <li><a href="members.html">MEMBERS</a></li>
+        <li><a href="location.html">LOCATION</a></li>
+      </ul>
+      <button class="close_button" id="close_button">
+        Close Menu<span></span><span></span>
+      </button>
+    </div>
     <div id="menu"><i class="fa-solid fa-bars-staggered"></i></div>
   </header>
 

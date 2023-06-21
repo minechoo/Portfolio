@@ -15,9 +15,17 @@
 			top: 0;
 			left: 50%;
 			transform: translateX(-50%);
+			width: 100px;
+			height: 100px;
+			filter: brightness(1000%);
 			opacity: 1;
 			transition: opacity 1s;
 			z-index: 3;
+			filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(147deg) brightness(104%) contrast(104%);
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			animation-name: circleMove;
+			transform-origin: center;
 
 			&.off {
 				opacity: 0;
@@ -144,6 +152,14 @@
 				}
 			}
 		}
+	}
+}
+@keyframes circleMove {
+	0% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(360deg);
 	}
 }
 @media screen and (max-width: 1538px) {

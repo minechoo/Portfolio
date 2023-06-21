@@ -1,8 +1,8 @@
 header {
+	position: absolute;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -37,25 +37,112 @@ header {
 				color: #fff;
 				font-size: 14px;
 				font-weight: 400;
+				line-height: 40px;
 			}
 		}
 	}
-	#menu {
+	#menu,
+	.close_button {
 		display: none;
 	}
 }
 
 @media screen and (max-width: 1024px) {
 	header {
+		display: block;
 		padding: 4%;
-		#gnb {
-			display: none;
+		h1 {
+			a {
+				float: left;
+			}
+		}
+		.gnb_wrap {
+			position: absolute;
+			top: 0;
+			right: -280px;
+			width: 280px;
+			height: 100vh;
+			font-size: 1.15em;
+			padding: 3.5em 1em 0;
+			background-color: rgba(0, 0, 0, 0.5);
+			overflow: hidden;
+			box-sizing: border-box;
+			transform: translate3d(0, 0, 0);
+			transition: 0.5s cubic-bezier(0.51, -0.17, 0.47, 1);
+			clip-path: polygon(25% 0%, 100% 0, 100% 50%, 100% 100%, 25% 100%, 0% 50%);
+
+			&.on {
+				transform: translate3d(-280px, 0, 0);
+				clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0% 50%);
+			}
+
+			&.off {
+				transform: translate3d(0, 0, 0);
+			}
+
+			#gnb {
+				justify-content: center;
+				align-items: center;
+				flex-wrap: wrap;
+				z-index: 100;
+				padding-top: 20px;
+
+				li {
+					width: 100%;
+
+					a {
+						color: #fff;
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 40px;
+					}
+				}
+			}
+			.close_button {
+				display: block;
+				position: absolute;
+				right: 250px;
+				top: 40px;
+				width: 16px;
+				height: 16px;
+				text-indent: -9999px;
+				background: none;
+			}
+
+			.close_button span {
+				content: '';
+				position: absolute;
+				width: 2px;
+				height: 100%;
+				top: 0;
+				left: 50%;
+				background: #fff;
+			}
+
+			.close_button span:first-child {
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+			.close_button span:last-child {
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+			}
 		}
 		#menu {
 			display: block;
+			float: right;
 
 			i {
 				color: #fff;
+			}
+		}
+	}
+}
+@media screen and (max-width: $mobile) {
+	header {
+		.gnb_wrap {
+			.close_button {
+				top: 2%;
 			}
 		}
 	}

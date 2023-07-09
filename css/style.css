@@ -369,24 +369,27 @@ header .close_button {
   header .gnb_wrap {
     position: absolute;
     top: 0;
-    right: -280px;
-    width: 280px;
+    right: 0;
+    width: 0;
     height: 100vh;
     font-size: 1.15em;
-    padding: 3.5em 1em 0;
     background-color: rgba(0, 0, 0, 0.5);
-    overflow: hidden;
+    overflow-x: hidden;
     box-sizing: border-box;
-    transform: translate3d(0, 0, 0);
-    transition: 0.5s cubic-bezier(0.51, -0.17, 0.47, 1);
+    z-index: 10;
+    transform: translate(280px, 0);
+    transition: 0.5s;
     clip-path: polygon(25% 0%, 100% 0, 100% 50%, 100% 100%, 25% 100%, 0% 50%);
   }
   header .gnb_wrap.on {
-    transform: translate3d(-280px, 0, 0);
+    width: 280px;
+    padding: 3.5em 1em 0;
+    transform: translate(0, 0);
     clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0% 50%);
   }
   header .gnb_wrap.off {
-    transform: translate3d(0, 0, 0);
+    width: 0;
+    transform: translate(280px, 0);
   }
   header .gnb_wrap #gnb {
     justify-content: center;
@@ -1243,6 +1246,9 @@ body {
   }
   main #news .content .contact .area_3 .area_inner ul li {
     display: inline-block;
+  }
+  .indicate {
+    display: none;
   }
 }
 @media screen and (max-width: 320px) {
